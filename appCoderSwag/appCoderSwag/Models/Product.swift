@@ -1,5 +1,5 @@
 //
-//  Category.swift
+//  Product.swift
 //  appCoderSwag
 //
 //  Created by Stephenson Ang on 09/05/2019.
@@ -8,13 +8,14 @@
 
 import Foundation
 
-struct Category {
-    //can be get but can't be set
+struct Product {
     private(set) public var title: String
+    private(set) public var price: String
     private(set) public var imageName: String
     
-    init(title: String, imageName: String) {
+    init(title: String, price: String, imageName: String) {
         self.title = title
+        self.price = price
         self.imageName = imageName
     }
 }
